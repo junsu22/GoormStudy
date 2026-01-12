@@ -28,7 +28,7 @@ trace 추가, axis 조작, trace 업데이트를 실습한 코드입니다.
 
 ### 5. Hover 커스터마이징 (수업 외 기능)
 - `hovertemplate`을 사용해 hover 출력 문장과 구조를 직접 정의
--
+
 ---
 
 ## 실행 파일
