@@ -17,6 +17,3 @@ Scatter Plot과 Histogram을 생성하고,
 - Multiple templates (`plotly_dark`, `ggplot2`)
 - Legend position & style customization
 - Axis and grid customization
-
-## 🔗 Blog Post
-👉 Velog 정리 글은 추후 업데이트 예정
