@@ -23,4 +23,4 @@ Scatter Plot과 Histogram을 생성하고,
 ![scatter](./images/scatter_plot.png)
 
 ### Histogram: Total Bill Distribution (by Day)
-![histogram](../images/histogram_plot.png)
+![histogram](./images/histogram_plot.png)
