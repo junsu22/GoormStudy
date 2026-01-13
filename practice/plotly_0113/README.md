@@ -17,3 +17,10 @@ Scatter Plot과 Histogram을 생성하고,
 - Multiple templates (`plotly_dark`, `ggplot2`)
 - Legend position & style customization
 - Axis and grid customization
+## 📊 Visualization Results
+
+### Scatter Plot: Total Bill vs Tip (by Day)
+![scatter](./images/scatter_plot.png)
+
+### Histogram: Total Bill Distribution (by Day)
+![histogram](../images/histogram_plot.png)
