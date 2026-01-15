@@ -1,7 +1,5 @@
 # Streamlit 토이 프로젝트 – 편의점 매출 대시보드
 
-> **최종 정리본 (이 파일만 사용)**
-
 ---
 
 ## 1. 프로젝트 개요
@@ -107,23 +105,11 @@ streamlit run app.py
 
 ---
 
-## 6. 사용 파일 구조 (최종)
 
-```text
-streamlit_0115/
-├─ app.py
-├─ requirements.txt
-├─ images/
-│  ├─ dashboard_main.png
-│  ├─ sales_plot.png
-│  ├─ streamlit_hello_local.png
-│  └─ streamlit_hello_colab.png
-└─ streamlit_0115_final.md  ← 이 파일
-```
 
 ---
 
-## 7. 프로젝트 정리
+## . 프로젝트 정리
 
 - Streamlit 기본 컴포넌트를 활용한 대시보드 형태의 토이 프로젝트를 완성했습니다.
 - Local / Colab / Gitpod 환경에서 Streamlit 실행을 모두 경험했습니다.
