@@ -70,7 +70,7 @@
 
 ## 5. Streamlit 기본 실행 확인
 
-과제 요구사항에 따라 **Streamlit 기본 환영 화면(hello)** 을 각 환경에서 확인했습니다.
+**Streamlit 기본 환영 화면(hello)** 을 각 환경에서 확인했습니다.
 
 ### 5.1 Local 환경
 
