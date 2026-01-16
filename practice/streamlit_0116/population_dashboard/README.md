@@ -98,10 +98,9 @@ streamlit run population_dashboard.py
 ## 🖥 실행 화면 예시
 
 - 메인 대시보드 화면  
-  (`images/dashboard_main.png`)
-
+![대시보드 메인](./images/dashboard_main.png)
 - 지표 선택 드롭다운 화면  
-  (`images/indicator_dropdown.png`)
+![지표 선택](./images/indicator_dropdown.png)
 
 ---
 
