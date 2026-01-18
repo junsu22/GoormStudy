@@ -141,9 +141,9 @@ streamlit run game_d_[commented.py](http://commented.py)
 
 ## 💡 배운 점
 
-- Streamlit은 빠른 프로토타입에 최적화되어 있음
-- 복잡한 커스텀 UI는 한계가 있음
-- `streamlit-elements`는 완전한 React 환경이 필요
+- Streamlit은 빠른 프로토타입에 최적화되어 있음    (간단하게 빠르게 만든다.)
+- 복잡한 커스텀 UI는 한계가 있음  (혼합 하는 것이 쉬운게 아니란 것을 깨달음. 충돌 등)
+- `streamlit-elements`는 완전한 React 환경이 필요 (학습 필요)
 - 프레임워크 선택은 요구사항에 따라 신중하게 결정해야 함
 
 ## 📂 프로젝트 구조
