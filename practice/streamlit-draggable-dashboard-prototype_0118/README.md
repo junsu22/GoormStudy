@@ -162,7 +162,7 @@ streamlit run game_d_[commented.py](http://commented.py)
 
 ## 👤 Author
 
-** junsu**
+** junsu **
 
 ---
 
