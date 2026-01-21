@@ -1,0 +1,278 @@
+[
+  {
+    "p.country": "일본",
+    "total_flights": 41624
+  },
+  {
+    "p.country": "중국",
+    "total_flights": 41451
+  },
+  {
+    "p.country": "베트남",
+    "total_flights": 17305
+  },
+  {
+    "p.country": "미국",
+    "total_flights": 14288
+  },
+  {
+    "p.country": "필리핀",
+    "total_flights": 8741
+  },
+  {
+    "p.country": "태국",
+    "total_flights": 6395
+  },
+  {
+    "p.country": "대만",
+    "total_flights": 5570
+  },
+  {
+    "p.country": "홍콩",
+    "total_flights": 5130
+  },
+  {
+    "p.country": "싱가포르",
+    "total_flights": 3411
+  },
+  {
+    "p.country": "말레이시아",
+    "total_flights": 3134
+  },
+  {
+    "p.country": "인도네시아",
+    "total_flights": 2568
+  },
+  {
+    "p.country": "독일",
+    "total_flights": 1959
+  },
+  {
+    "p.country": "캐나다",
+    "total_flights": 1787
+  },
+  {
+    "p.country": "괌",
+    "total_flights": 1753
+  },
+  {
+    "p.country": "호주",
+    "total_flights": 1715
+  },
+  {
+    "p.country": "한국",
+    "total_flights": 1602
+  },
+  {
+    "p.country": "아랍에미리트",
+    "total_flights": 1357
+  },
+  {
+    "p.country": "마카오",
+    "total_flights": 1170
+  },
+  {
+    "p.country": "프랑스",
+    "total_flights": 1143
+  },
+  {
+    "p.country": "몽골",
+    "total_flights": 1072
+  },
+  {
+    "p.country": "하와이",
+    "total_flights": 990
+  },
+  {
+    "p.country": "이탈리아",
+    "total_flights": 971
+  },
+  {
+    "p.country": "캄보디아",
+    "total_flights": 952
+  },
+  {
+    "p.country": "터키",
+    "total_flights": 903
+  },
+  {
+    "p.country": "라오스",
+    "total_flights": 866
+  },
+  {
+    "p.country": "우즈베키스탄",
+    "total_flights": 796
+  },
+  {
+    "p.country": "사이판",
+    "total_flights": 714
+  },
+  {
+    "p.country": "카자흐스탄",
+    "total_flights": 712
+  },
+  {
+    "p.country": "영국",
+    "total_flights": 705
+  },
+  {
+    "p.country": "스페인",
+    "total_flights": 647
+  },
+  {
+    "p.country": "멕시코",
+    "total_flights": 640
+  },
+  {
+    "p.country": "네덜란드",
+    "total_flights": 540
+  },
+  {
+    "p.country": "카타르",
+    "total_flights": 412
+  },
+  {
+    "p.country": "핀란드",
+    "total_flights": 351
+  },
+  {
+    "p.country": "체코",
+    "total_flights": 305
+  },
+  {
+    "p.country": "폴란드",
+    "total_flights": 301
+  },
+  {
+    "p.country": "뉴질랜드",
+    "total_flights": 293
+  },
+  {
+    "p.country": "에티오피아",
+    "total_flights": 261
+  },
+  {
+    "p.country": "미얀마",
+    "total_flights": 255
+  },
+  {
+    "p.country": "인도",
+    "total_flights": 221
+  },
+  {
+    "p.country": "헝가리",
+    "total_flights": 211
+  },
+  {
+    "p.country": "스위스",
+    "total_flights": 210
+  },
+  {
+    "p.country": "노르웨이",
+    "total_flights": 194
+  },
+  {
+    "p.country": "포르투갈",
+    "total_flights": 157
+  },
+  {
+    "p.country": "브루나이",
+    "total_flights": 157
+  },
+  {
+    "p.country": "벨기에",
+    "total_flights": 154
+  },
+  {
+    "p.country": "룩셈부르크",
+    "total_flights": 140
+  },
+  {
+    "p.country": "키르기즈스탄",
+    "total_flights": 126
+  },
+  {
+    "p.country": "네팔",
+    "total_flights": 114
+  },
+  {
+    "p.country": "스리랑카",
+    "total_flights": 100
+  },
+  {
+    "p.country": "브라질",
+    "total_flights": 99
+  },
+  {
+    "p.country": "아제르바이잔",
+    "total_flights": 92
+  },
+  {
+    "p.country": "크로아티아",
+    "total_flights": 61
+  },
+  {
+    "p.country": "덴마크",
+    "total_flights": 53
+  },
+  {
+    "p.country": "투르크메니스탄",
+    "total_flights": 46
+  },
+  {
+    "p.country": "이집트",
+    "total_flights": 25
+  },
+  {
+    "p.country": "방글라데시",
+    "total_flights": 23
+  },
+  {
+    "p.country": "조지아",
+    "total_flights": 5
+  },
+  {
+    "p.country": "아르메니아",
+    "total_flights": 4
+  },
+  {
+    "p.country": "타지키스탄",
+    "total_flights": 3
+  },
+  {
+    "p.country": "레바논",
+    "total_flights": 2
+  },
+  {
+    "p.country": "남수단",
+    "total_flights": 2
+  },
+  {
+    "p.country": "오스트리아",
+    "total_flights": 1
+  },
+  {
+    "p.country": "이라크",
+    "total_flights": 1
+  },
+  {
+    "p.country": "케냐",
+    "total_flights": 1
+  },
+  {
+    "p.country": "나이지리아",
+    "total_flights": 0
+  },
+  {
+    "p.country": "칠레",
+    "total_flights": 0
+  },
+  {
+    "p.country": "페루",
+    "total_flights": 0
+  },
+  {
+    "p.country": "모로코",
+    "total_flights": 0
+  }
+]
