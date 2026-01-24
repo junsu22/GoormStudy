@@ -61,7 +61,7 @@ QuickMapServices 플러그인으로 대체하여 실습을 진행하였다.
 ---
 
 ## 6. 데이터 정제 및 GeoPackage 저장
-![](https://velog.velcdn.com/images/junsu22/post/f646ec80-d45f-4bfe-a0c4-65e4c2a7f5e6/image.png)
+
 
 CSV 데이터 내 일부 좌표 오류로 인해  
 정상적으로 생성된 포인트 외에  
@@ -214,6 +214,7 @@ GeoPackage를 사용함으로써
 데이터를 이해하고, 연결하고,  
 그 결과를 시각적으로 해석하는 과정 자체가  
 GIS 작업의 핵심이라는 점이 인상 깊었다.
+
 
 
 
