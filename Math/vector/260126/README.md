@@ -1,4 +1,4 @@
-
+# 벡터(Vector)와 정사영 (Projection) 정리
 ---
 
 ## 1. 벡터(Vector)
@@ -211,4 +211,5 @@ proj = (x.dot_product(a) / a.dot_product(a)) * a
 첫 시간이기도 하고 아직 낯설다.
 그래도 막연했던 개념들이
 조금은 형태를 갖추기 시작한 느낌은 든다.
+
 
