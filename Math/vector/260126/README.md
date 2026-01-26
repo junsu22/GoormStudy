@@ -103,7 +103,6 @@ x · y = ||x|| · ||y|| · cosθ
 ```python
 v = vector([1, 2, 3])
 w = vector([4, 5, 6])
-![](https://velog.velcdn.com/images/junsu22/post/d42891b2-19e8-4a8a-8e56-441921e332e8/image.png)
 
 v.dot_product(w)
 ```
@@ -211,5 +210,6 @@ proj = (x.dot_product(a) / a.dot_product(a)) * a
 첫 시간이기도 하고 아직 낯설다.
 그래도 막연했던 개념들이
 조금은 형태를 갖추기 시작한 느낌은 든다.
+
 
 
