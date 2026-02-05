@@ -38,6 +38,11 @@ def selection_sort(arr):
                 min_idx = j  # 최솟값 인덱스 갱신
         arr[i], arr[min_idx] = arr[min_idx], arr[i]  # 최솟값을 i번째로 이동
     return arr
+    
+# 예시 배열
+# arr = [64, 34, 25, 12, 22, 11, 90]
+# selection_sort(arr)
+# print("Sorted array is : ", arr)
 
 
 # Sorted array is :  [11, 12, 22, 25, 34, 64, 90]
