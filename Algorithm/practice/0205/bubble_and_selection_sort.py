@@ -27,7 +27,6 @@ print("Sorted array is : ", arr)
 # ===============================
 
 
-# 예시 배열
 def selection_sort(arr):
     """선택 정렬: 매번 최솟값을 찾아 앞으로 이동"""
     n = len(arr)
