@@ -91,3 +91,22 @@ plt.title("Training Loss")  # 그래프 제목
 plt.grid(True, alpha=0.3)  # 그리드 추가 , 투명도 30%
 plt.show()  # 화면 표시
 
+
+
+'''
+Epoch [100/1000], Loss: 0.2535
+Epoch [200/1000], Loss: 0.2007
+Epoch [300/1000], Loss: 0.1743
+Epoch [400/1000], Loss: 0.1575
+Epoch [500/1000], Loss: 0.1456
+Epoch [600/1000], Loss: 0.1365
+Epoch [700/1000], Loss: 0.1292
+Epoch [800/1000], Loss: 0.1232
+Epoch [900/1000], Loss: 0.1182
+Epoch [1000/1000], Loss: 0.1138
+
+정확도: 99.00%
+
+'''
+
+
