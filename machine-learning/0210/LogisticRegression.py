@@ -90,3 +90,4 @@ plt.ylabel("Loss")  # y축 레이블 이름설정
 plt.title("Training Loss")  # 그래프 제목
 plt.grid(True, alpha=0.3)  # 그리드 추가 , 투명도 30%
 plt.show()  # 화면 표시
+
