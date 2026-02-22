@@ -51,3 +51,30 @@ def merge(left: List[int], right: List[int]) -> List[int]:
     merged.extend(right[j:])  # j번 인덱스 부터 끝까지 슬라이싱
     return merged # 완성된 정렬 리스트를 반환
 
+
+# benchmark : 성능분석 . 
+# 데이터의 크기를 늘려가면서 mergesort가 얼마나 빠른지 측정하는 함수
+def benchmark():
+    # 정렬할 데이터의 개수 (1만개, 5만개, 10만개)
+    sizes = [10_000, 50_000, 100_000]  # 필요시 조절
+    print("=== Merge Sort Benchmark ===")
+    for n in sizes: # sizes 리스트를 하나씩 꺼내서 반복
+        #  0~100만 사이 랜덤 정수를 n개 생성 , _ : 인덱스 가 필요 없을 때 사용하는 관례
+        data = [random.randint(0, 1_000_000) for _ in range(n)]
+        # 타이머 시작.perf_counter() 고정밀 측정용 
+        start = time.perf_counter()
+        # 실제 정렬실행 (이 사이의 시간을 측정해야함)
+        sorted_data = merge_sort(data)
+        # 타이머 종료 후 경과 시간 계산 (끝 - 시작)
+        elapsed = time.perf_counter() - start
+
+        # 검증 (정렬이 맞는지)
+        assert sorted_data == sorted(data), "정렬 결과가 올바르지 않습니다!"
+        #  결과 출력. :>7은 오른쪽 정렬 7칸, :.4f는 소수점 4자리
+        print(f"N={n:>7} | time={elapsed:.4f}s")
+
+# 이 파일을 직접 실행할 때만 benchmark() 호출. 다른 파일에서 import하면 실행 안 됨
+if __name__ == "__main__":
+    benchmark()
+
+
