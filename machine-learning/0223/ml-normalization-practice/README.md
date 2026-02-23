@@ -57,7 +57,3 @@ recommend_pet(0)
 - Similarity Score 출력
 - Streamlit 기반 웹 서비스 확장
 
----
-
-## 🧩 Tech Stack
-Python, Pandas, Scikit-learn, StandardScaler, Cosine Similarity
