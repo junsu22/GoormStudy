@@ -255,3 +255,88 @@ Feature Importance 그래프는 각 feature가 모델 학습 과정에서 얼마
 
 즉, 모델이 어떤 특징을 중요하게 판단했는지 해석할 수 있는 지표이다
 """
+
+from lightgbm import LGBMClassifier, early_stopping, log_evaluation # LightGBM 불러오기
+
+import pandas as pd
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, recall_score, f1_score, precision_score, roc_auc_score
+from sklearn.metrics import confusion_matrix
+
+dataset = load_breast_cancer()
+ftr = dataset.data
+target = dataset.target
+
+feature_names = dataset.feature_names  # 피처 이름 가져오기
+
+# X does not have valid feature names 경고문구
+# split 전에 DataFrame으로 변환
+# 앞전에 실습을 DataFrame 으로 했기때문에 numpy → DataFrame 변환하여 진행
+ftr = pd.DataFrame(ftr, columns=feature_names)
+
+
+
+
+# 예제 데이터 세트 중 80%를 학습, 20%를 테스트 데이터셋으로 분할
+X_train, X_test, y_train, y_test = train_test_split(ftr, target, test_size = 0.2, random_state = 156)
+
+# 트리개수는 400개로 지정
+lgbm_wrapper = LGBMClassifier(n_estimators=400, random_state = 156)
+
+# LGBM도 XGBoost 처럼 early stopping 가능
+evals = [(X_test, y_test)]
+lgbm_wrapper.fit(X_train, y_train, eval_set=evals, eval_metric = 'logloss',
+                 callbacks = [early_stopping(stopping_rounds = 100),
+                              log_evaluation(10)]) # 10 iteration마다 로그 출력 (verbose 대체)
+# ightGBM 최신 버전에서 early_stopping_rounds 삭제됨
+
+preds = lgbm_wrapper.predict(X_test)
+
+# =============로그분석=============================================
+# 전체 데이터 455개
+# [LightGBM] [Info] Number of positive: 280, number of negative: 175
+
+# 사용한 피쳐는 30개
+# [LightGBM] [Info] Number of data points in the train set: 455, number of used features: 30
+
+# 이미 45번째 에서 최적의 성능을 찾았고, 중단했다.
+# Early stopping, best iteration is:
+# [45]	valid_0's binary_logloss: 0.122818  ←검증손실(loss)
+
+# [LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+# 더 분리 할 수 있는 데이터가 없음
+
+# 50 번째 부터 악화가 시작되었다. 이후로 계속 loss값이 올라가는것을 확인.
+# [50]	valid_0's binary_logloss: 0.127004
+# =================================================================
+
+# 혼동행렬 , 정확도, 정밀도, 재현율, F1 , AUC
+def get_clf_eval(y_test, y_pred):
+    confusion = confusion_matrix(y_test, y_pred)
+    accuracy = accuracy_score(y_test, y_pred)
+    precision = precision_score(y_test, y_pred)
+    recall = recall_score(y_test, y_pred)
+    F1 = f1_score(y_test, y_pred)
+    AUC = roc_auc_score(y_test, y_pred)
+
+    print('오차행렬 :\n', confusion)
+    print('\n정확도 : {:.4f}'.format(accuracy))
+    print('정밀도 : {:.4f}'.format(precision))
+    print('재현율 : {:.4f}'.format(recall))
+    print('F1 : {:.4f}'.format(F1))
+    print('AUC : {:.4f}'.format(AUC))
+
+
+
+# 실습 → predict 사용 (0/1 그대로 AUC 계산, 흐름 이해용)
+get_clf_eval(y_test, preds)
+
+print("="*20)
+# 실무 → predict_proba 사용 (확률값으로 AUC 계산, 더 정확)
+pred_proba = lgbm_wrapper.predict_proba(X_test)[:, 1]
+
+# AUC만 따로 출력
+print('AUC (proba) : {:.4f}'.format(roc_auc_score(y_test, pred_proba)))
+
