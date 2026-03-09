@@ -1,0 +1,304 @@
+OT  메모
+
+파이썬 = import OS 
+-윈 맥 리눅스 사용가능
+-파일 이동 관리 간단
+
+예시
+# 새 디렉토리 생성 (어떤코드 쓸건지)
+os.mkdir ("new_directory")
+패키지 
+라이브러리 os.
+
+pathlib : 얼마나 잘 설명 해놨는지 
+경로를 설정해서 객체를 생성 
+
+shutul : 고수준 파일 연산 라이브러리 파이썬 = import OS 
+윈 맥 리눅스 사용가능
+파일 이동 관리 간단
+
+예시
+# 새 디렉토리 생성 (어떤코드 쓸건지)
+os.mkdir ("new_directory")
+패키지 
+라이브러리 os.
+
+pathlib : 얼마나 잘 설명 해놨는지 
+경로를 설정해서 객체를 생성 
+
+shutul : 고수준 파일 연산 라이브러리 
+파일 복사 디렉토리복사 데릭토리 삭제 파일 압축등
+
+import sys 
+운영체제 관련된 내용은 제가 공부를 처음부터 할 수 있는 공개 강의 정리 해놓은것 있어요 하나씩 들어볼 수 있게 
+
+
+이미파일 라이브러리 
+with tempflie . temporary () 
+
+test 할 떄 많이 사용합니다 . 
+바이브 코딩 알기만 하면 요청 해도 됨 
+
+time : 시간을 측정한다거나,  딜레이줘야 할때
+변환 해야 할떄
+ time.sleep(3) 3초간 정지 
+
+연원일 시간 포맷 선정 
+faratted)time = time.strftime ()
+
+time 라이브러리 
+
+
+알고리즘스 라이브러리 
+(어떤 방식으로 정렬 한다던지 , 어떤 경로로 운전할건지) = 방법론
+
+아파치 에로우 : 병렬 처리 , pandas 
+모델 한번에 돌릴떄 분산된 환경에서 
+
+멀티스레딩 pyArrow 
+
+Apache Arrow : 변환과정 없이 
+
+
+pip install pyarrow
+(pip 설치 때 쓰는 명령어)
+
+
+Faker 패키지 (가짜 이름,주소 , 문장 , 이메일 생성)
+print(fake.email())
+가짜 데이터를 생성 
+
+Jupyter 툴 
+웹 형식의 애플리케이션 
+
+주피터 환경 사용할것 . 코랩 과 같음 .
+<화면설명>
+-----------------------
+텍스트 영역
+------------------
+코드영역
+-----------------------
+
+
+코랩 을 이용해서 코딩 공부 
+jupyter lab 노트북의 상위 개념 
+다양한 탭 띄워서 관리등 
+pyvis 노드 js 라이브러리
+
+kiwisolver : 제약 해결 알고리즘 
+그래픽 할때 많이 사용  
+
+NumPy : 다차원 배열 행렬연산 
+배열생성 통계 
+고성능의 수치계산을 위한 라이브러리
+
+
+이미지 처리 : pillow (PIL 의 후속 라이브러리)
+easyocr : 단점 손글씨 인식 잘 안된다. 이미지에서 텍스트를 추출하는데 사용, 다국어 제공
+
+face_recognition : 얼굴 인식 라이브러리 
+# 이미지 로드 및 얼굴인식 
+# 비교할 이미지 
+#얼굴 비교 
+
+Mahotas : 컴퓨터 비전 라이브러리 
+(이미지를 필터 씌우는 라이러리 ) 
+# 가우시안 필터 적용 
+filter)image - mahitas,a=gaussian_filter(image, sigma - 5)
+
+Pillow (PIL Fork ) : 
+이미징 라이브러리(업그레이드)
+
+
+SciPy.ndimage : 다차원이미지 처리 모듈 :
+시뮬레이션 할 때 많이 사용
+SimpleCV : 컴퓨터 비전 처리 라이브러리
+Colour-science : 컬러 과학에 관한 알고리즘 제공
+RGB 색상을 CIE XYZ 색상으로 변환 등  
+영상 및 사진 편집 , 디지털 아트 및 디자인 
+디모자이킹 (흑백>컬러사진, 색 복원)
+
+python-dotenv : 환경 변수 관리 라이브러리 
+git hub 에 API 키등을 올리지 않도록 
+보안강화 .env 데이터 베이스 ID PW 만들어서 관리
+등 
+
+★추상 클래스 라이브러리 
+
+ctypes  C언어의 특징 들 API 를 파이썬에서 사용 
+.dll, .so 등 호출 가능
+
+메모리, 타입 ,형 변환 등 유의 
+logging : 파이썬 로깅 도구 
+(이벤트를 추적,데이턱 관리 로그레벨(CRITCAL , WARNINIG 등)
+
+Loguru 로깅기능을 효율적으로 개선한 라이브러리 
+pip 를 사용해 간편히 설치할 수 있따
+
+structlog : 구조화된 로깅 
+눈으로 보기 편하게  로그의 가독성을 높인 라이브러리
+
+
+파이썬의 특지잉ㄴ 병령 프로그래밍 
+mutiprocessing : Python 내장 별렬 프로그램
+
+GitPythin : Git 저장소의 작업 조작 라이브러리 (형상관리라이브러리 ..최종 ,, 진짜 최종 ,,,,지인짜 최종 어떻게 변화되었는지 관리 )
+
+PRAW : Python Rddit API Wrapper 
+최신 게시물 을 검색하고 댓글 달 수 있다 .
+데이터 수집 자동화 마켓팅 커뮤니티 관리 
+레딧에서 쉽게 가져올 수 있다 
+
+facebook-sdk : 페이스북(메타) 그래프 API 
+
+google-api-python-client : 구글 서비스 API 라이브러리 , 구글 드라이브 파일 업로드 ,캘린더 ,시트 등의 기능 제공
+
+pythom-telegram-bot : Telegram Bot API 개발 도구 
+
+google cloud python : GCP 의 다양한 클라이언트 라이브러리 모음 
+
+SQL 데이터를 가져온다거나 클라우드  AWS 비슷한 형태 기능 지원
+home assistant core : IOT 오픈소스 홈 자동화 플랫폼 라이브러리 (저녁 조명 켜기 등)
+
+iceCream : 디버깅 툴 print() 로 디버깅 하지 마세여
+디버깅 시간 단축 ,함수가 언제 어디서 어떤값으로 호출 되었는지
+
+모두 알필요는 없음 적재조서 프롬포트 
+
+파일 복사 디렉토리복사 데릭토리 삭제 파일 압축등
+
+import sys 
+운영체제 관련된 내용은 제가 공부를 처음부터 할 수 있는 공개 강의 정리 해놓은것 있어요 하나씩 들어볼 수 있게 
+
+
+이미파일 라이브러리 
+with tempflie . temporary () 
+
+test 할 떄 많이 사용합니다 . 
+
+바이브 코딩 알기만 하면 요청 해도 됨 
+
+time : 시간을 측정한다거나,  딜레이줘야 할때
+변환 해야 할떄
+ time.sleep(3) 3초간 정지 
+
+연원일 시간 포맷 선정 
+faratted)time = time.strftime ()
+
+time 라이브러리 
+
+
+알고리즘스 라이브러리 
+(어떤 방식으로 정렬 한다던지 , 어떤 경로로 운전할건지) = 방법론
+
+아파치 에로우 : 병렬 처리 , pandas 
+모델 한번에 돌릴떄 분산된 환경에서 
+
+멀티스레딩 pyArrow 
+
+Apache Arrow : 변환과정 없이 
+
+
+pip install pyarrow
+(pip 설치 때 쓰는 명령어)
+
+
+Faker 패키지 (가짜 이름,주소 , 문장 , 이메일 생성)
+print(fake.email())
+가짜 데이터를 생성 
+
+Jupyter 툴 
+웹 형식의 애플리케이션 
+
+주피터 환경 사용할것 . 코랩 과 같음 .
+
+텍스트 영역
+------------------
+코드영역
+
+
+
+코랩 을 이용해서 코딩 공부 
+jupyter lab 노트북의 상위 개념 
+다양한 탭 띄워서 관리등 
+pyvis 노드 js 라이브러리
+
+kiwisolver : 제약 해결 알고리즘 
+그래픽 할때 많이 사용  
+
+NumPy : 다차원 배열 행렬연산 
+배열생성 통계 
+고성능의 수치계산을 위한 라이브러리
+
+
+이미지 처리 : pillow (PIL 의 후속 라이브러리)
+easyocr : 단점 손글씨 인식 잘 안된다. 이미지에서 텍스트를 추출하는데 사용, 다국어 제공
+
+face_recognition : 얼굴 인식 라이브러리 
+# 이미지 로드 및 얼굴인식 
+# 비교할 이미지 
+#얼굴 비교 
+
+Mahotas : 컴퓨터 비전 라이브러리 
+(이미지를 필터 씌우는 라이러리 ) 
+# 가우시안 필터 적용 
+filter)image - mahitas,a=gaussian_filter(image, sigma - 5)
+
+Pillow (PIL Fork ) : 
+이미징 라이브러리(업그레이드)
+
+
+SciPy.ndimage : 다차원이미지 처리 모듈 :
+시뮬레이션 할 때 많이 사용
+SimpleCV : 컴퓨터 비전 처리 라이브러리
+Colour-science : 컬러 과학에 관한 알고리즘 제공
+RGB 색상을 CIE XYZ 색상으로 변환 등  
+영상 및 사진 편집 , 디지털 아트 및 디자인 
+디모자이킹 (흑백>컬러사진, 색 복원)
+
+python-dotenv : 환경 변수 관리 라이브러리 
+git hub 에 API 키등을 올리지 않도록 
+보안강화 .env 데이터 베이스 ID PW 만들어서 관리
+등 
+
+★추상 클래스 라이브러리 
+
+ctypes  C언어의 특징 들 API 를 파이썬에서 사용 
+.dll, .so 등 호출 가능
+
+메모리, 타입 ,형 변환 등 유의 
+logging : 파이썬 로깅 도구 
+(이벤트를 추적,데이턱 관리 로그레벨(CRITCAL , WARNINIG 등)
+
+Loguru 로깅기능을 효율적으로 개선한 라이브러리 
+pip 를 사용해 간편히 설치할 수 있따
+
+structlog : 구조화된 로깅 
+눈으로 보기 편하게  로그의 가독성을 높인 라이브러리
+
+
+파이썬의 특징 병렬 프로그래밍 
+mutiprocessing : Python 내장 별렬 프로그램
+
+GitPythin : Git 저장소의 작업 조작 라이브러리 (형상관리라이브러리 ..최종 ,, 진짜 최종 ,,,,지인짜 최종 어떻게 변화되었는지 관리 )
+
+PRAW : Python Rddit API Wrapper 
+최신 게시물 을 검색하고 댓글 달 수 있다 .
+데이터 수집 자동화 마켓팅 커뮤니티 관리 
+레딧에서 쉽게 가져올 수 있다 
+
+facebook-sdk : 페이스북(메타) 그래프 API 
+
+google-api-python-client : 구글 서비스 API 라이브러리 , 구글 드라이브 파일 업로드 ,캘린더 ,시트 등의 기능 제공
+
+pythom-telegram-bot : Telegram Bot API 개발 도구 
+
+google cloud python : GCP 의 다양한 클라이언트 라이브러리 모음 
+
+SQL 데이터를 가져온다거나 클라우드  AWS 비슷한 형태 기능 지원
+home assistant core : IOT 오픈소스 홈 자동화 플랫폼 라이브러리 (저녁 조명 켜기 등)
+
+iceCream : 디버깅 툴 print() 로 디버깅 하지 마세여
+디버깅 시간 단축 ,함수가 언제 어디서 어떤값으로 호출 되었는지
+
+모두 알필요는 없음 .적재적소 프롬포트 
