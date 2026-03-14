@@ -653,6 +653,37 @@ print("Recall(재현율):",    round(valid_recall_3*100, 2))
 print("Precision(정밀도):", round(valid_precision_3*100, 2))
 print("F1 Score:",          round(valid_f1_3, 4))
 
+
+# ---------------------------
+# Voting Ensemble 모델
+# ---------------------------
+
+from sklearn.ensemble import VotingClassifier
+
+# Voting 모델 생성
+voting = VotingClassifier(
+    estimators=[
+        ('dt', dt),
+        ('rf', rf),
+        ('xgb', xgb)
+    ],
+    voting='soft'  # 확률 평균 방식
+)
+
+# 모델 학습
+voting.fit(X_train, y_train)
+
+# 예측
+pred_v = voting.predict(X_valid)
+
+# 성능 평가
+from sklearn.metrics import accuracy_score
+
+voting_acc = accuracy_score(y_valid, pred_v)
+
+print("Voting Accuracy :", round(voting_acc, 4))
+
+
 # 제출 파일 생성 (RandomForest 기준)
 pred_test = rf.predict_proba(test)
 submission = submission.astype(float)
