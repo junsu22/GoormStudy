@@ -1,3 +1,15 @@
+# BPE (Byte Pair Encoding)
+
+자주 등장하는 문자 쌍을 반복적으로 병합하여
+서브워드(subword) 단위를 만드는 토크나이저 알고리즘이다.
+
+초기에는 문자 단위 vocabulary로 시작하고,
+가장 많이 등장하는 문자 쌍을 반복적으로 병합하면서
+새로운 토큰을 생성하여 vocabulary를 확장한다.
+
+이를 통해 OOV(Out Of Vocabulary) 문제를 줄이고
+희귀 단어도 서브워드 조합으로 표현할 수 있다.
+
 # NLG (Natural Language Generation)
 자연어 처리는 크게 자연어 이해(NLU)와 자연어 생성(NLG)의 영역이 있다.
 자연어 생성은 기계가 텍스트를 스스로 생성하는 영역을 말한다.
