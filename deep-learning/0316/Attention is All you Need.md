@@ -23,7 +23,7 @@ best models from the literature. We show that the Transformer generalizes well t
 other tasks by applying it successfully to English constituency parsing both with
 large and limited training data
 
---
+
 정리 : 
 🎯 목적 
 기존의 대표적인 시퀀스 변환 모델들은 인코더와 디코더를 포함한 순환신경망(RNN)또는 합성곱 신경망 (CNN) 기반 구조해 의존 해옴. 
