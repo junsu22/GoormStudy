@@ -43,3 +43,10 @@ large and limited training data
 ⭐ 핵심
 순환구조 RNN 나 합성곱 RNN 을 완전히 제거 후 어텐션 메커니즘 기반으로만 만든 트랜스포머 가 
 좋은 성능을 내었다 .
+
+(..중략)
+
+
+## Model Architecture
+
+![](images/attention__architecture.png)
