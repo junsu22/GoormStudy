@@ -64,3 +64,33 @@ large and limited training data
 ## Model Architecture
 
 ![](images/attention__architecture.png)
+
+
+# Encoder / Decoder
+
+Transformer는 Encoder와 Decoder 구조로 이루어져 있다.
+
+각 Encoder layer는 다음 두 가지로 구성된다.
+
+Multi-Head Self-Attention
+
+Feed Forward Network
+
+Decoder는 Encoder와 유사한 구조를 가지지만,
+Encoder의 출력에 대한 Attention과
+미래 토큰을 보지 못하도록 하는 Masking을 추가로 사용한다.
+
+# Attention
+Attention은 Query, Key, Value로 구성된다.
+
+Q와 K의 유사도를 계산하여
+Query와 Key의 유사도를 계산하여 softmax를 통해 가중치를 생성하고,
+이 가중치를 이용해 **Value의 가중합(weighted sum)**을 계산하여 출력한다.
+
+
+### Multi-Head Attention
+여러 Attention을 병렬로 수행하여
+문장 내 다양한 관계를 동시에 학습한다.
+
+
+![](images/attention__architecture_fig2.png)
