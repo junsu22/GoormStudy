@@ -5,6 +5,8 @@
 https://arxiv.org/pdf/1706.03762
 
 Abstract 원문 
+--
+
 The dominant sequence transduction models are based on complex recurrent or
 convolutional neural networks that include an encoder and a decoder. The best
 performing models also connect the encoder and decoder through an attention
@@ -20,6 +22,7 @@ training for 3.5 days on eight GPUs, a small fraction of the training costs of t
 best models from the literature. We show that the Transformer generalizes well to
 other tasks by applying it successfully to English constituency parsing both with
 large and limited training data
+
 --
 정리 : 
 🎯 목적 
