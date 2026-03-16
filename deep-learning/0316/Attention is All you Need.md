@@ -27,7 +27,6 @@ other tasks by applying it successfully to English constituency parsing both wit
 large and limited training data
 
 
-정리 : 
 
 
 ## 🎯 목적 
