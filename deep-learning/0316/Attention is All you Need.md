@@ -1,6 +1,8 @@
 # Attention Is All You Need
 
 저자 : Ashish Vaswani 외 7명
+
+
 학회 : 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA
 
 https://arxiv.org/pdf/1706.03762
