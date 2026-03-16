@@ -94,3 +94,143 @@ Query와 Key의 유사도를 계산하여 softmax를 통해 가중치를 생성�
 
 
 ![](images/attention__architecture_fig2.png)
+
+
+
+
+## Why Self-Attention
+Self-Attention 레이어를 기존에 널리 사용되던
+순환 신경망(RNN)과 합성곱 신경망(CNN) 레이어와 비교한다.
+
+보통 가변 길이의 입력 시퀀스
+(x1, x2, ... , xn) 
+
+을 동일한 길이의 출력 시퀀스
+(z1, z2, ... , zn)
+
+으로 변환하는 데 사용한다.
+xi 와 zi 는 ℝᵈ 공간의 벡터이다.
+
+
+이러한 구조는 일반적인 시퀀스 변환 모델(sequence transduction model) 의
+인코더나 디코더의 은닉층(hidden layer) 에서 사용된다.
+
+
+
+### Self-Attention을 사용하는 이유
+다음 세 가지 기준을 고려한다.
+
+- Computational Complexity
+→ 레이어 당 계산 복잡도
+
+- Parallelization
+→ 병렬 처리 가능성
+
+- Long-range Dependency
+→ 멀리 떨어진 단어 간 관계 학습 능력
+
+Self-Attention은 병렬 처리가 가능하고
+계산 효율성이 높으며
+장거리 의존성(long-range dependency)을 더 쉽게 학습할 수 있다.
+
+
+
+### 계산 효율성 비교
+
+Self-Attention 레이어는 모든 위치를
+상수 개수의 순차 연산으로 연결할 수 있다.
+
+반면 RNN 레이어는
+시퀀스 길이에 따라 O(n) 개의 순차 연산이 필요하다.
+
+따라서 Self-Attention은 RNN보다
+병렬 처리에 더 유리하다.
+
+
+### Long-range Dependency
+
+많은 자연어 처리 문제에서는
+멀리 떨어진 단어들 사이의 관계를 학습하는 것이 중요하다.
+
+Self-Attention은 모든 토큰이 서로 직접 연결되기 때문에
+이러한 장거리 의존성(long-range dependency) 을
+더 쉽게 학습할 수 있다.
+
+
+
+### CNN과 비교
+
+CNN 구조에서는 모든 입력과 출력 위치를 연결하기 위해
+여러 개의 convolution layer가 필요하다.
+
+이 경우 두 위치 사이의 경로 길이(path length) 가 길어지게 된다.
+
+반면 Self-Attention은
+모든 토큰을 한 번의 연산으로 직접 연결할 수 있어
+경로 길이가 더 짧다.
+
+
+
+### 추가 장점
+
+Self-Attention은 모델의 동작을
+해석하기 쉬운(interpretable) 특징도 가진다.
+
+논문에서는 attention 분포를 분석한 결과
+각 attention head가 서로 다른 역할을 학습하며
+문장의 문법적 구조와 의미적 관계를 포착하는 모습을 보였다.
+
+--
+
+
+Section 5 (Training)는 모델의 학습 과정(training setup) 을 설명하는 부분으로
+데이터셋 구성, optimizer, learning rate schedule 등
+구현 및 실험 설정에 대한 세부 사항을 다룬다.
+본 정리에서는 모델 구조와 핵심 개념 이해에 집중하기 위해 생략하였다.
+
+## Results (실험 결과)
+
+Transformer의 성능을 기계 번역 실험을 통해 평가하였다.
+
+**실험**
+
+- 영어 → 독일어 번역 (EN → DE)
+- 영어 → 프랑스어 번역 (EN → FR)
+
+**데이터셋**
+
+- WMT 2014
+
+**결과**
+
+- BLEU 28.4 (EN → DE)
+- BLEU 41.8 (EN → FR)
+
+**요약**
+
+Transformer는 기존 최고 모델보다 높은 성능을 보였으며  
+더 적은 학습 비용으로 **state-of-the-art (SOTA, 최고 성능)** 를 달성하였다.
+
+
+## Conclusion 요약
+
+- Transformer는 기존 RNN/CNN 기반 모델과 달리  
+  Self-Attention만으로 구성된 sequence transduction 모델이다.
+
+- 기계 번역 실험에서 기존 모델보다 빠른 학습과  
+  더 높은 성능을 달성하며 새로운 state-of-the-art를 기록하였다.
+
+- 또한 Attention 기반 모델이 다양한 분야로  
+  확장될 가능성을 보여주었다.
+
+
+
+
+
+## Reference
+Vaswani et al., "Attention Is All You Need", NeurIPS 2017  
+https://arxiv.org/abs/1706.03762
+
+
+
+
