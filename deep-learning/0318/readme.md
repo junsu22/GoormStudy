@@ -1,4 +1,4 @@
-# 🧠 KLUE BERT 기반 NER / NLI 구현 프로젝트
+# 🧠 KLUE BERT 기반 NER / NLI 구현 
 
 ## 📖 Overview
 
