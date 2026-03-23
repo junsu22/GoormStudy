@@ -1,3 +1,8 @@
+shell>
 wsl -d Ubuntu
 
+활성화>
 source ~/tf-env/bin/activate
+
+jupyter> 
+pip install jupyter jupyter_http_over_ws
