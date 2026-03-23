@@ -1,0 +1,3 @@
+wsl -d Ubuntu
+
+source ~/tf-env/bin/activate
