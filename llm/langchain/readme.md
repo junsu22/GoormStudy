@@ -59,8 +59,8 @@
 ```text
 llm/
  └── langchain/
-      ├── langchain_prompt_stream.ipynb
-      ├── langchain_prompt_stream.py
+      ├── langchain_prompt_stream_gpt54.ipynb
+      ├── langchain_prompt_stream_gpt54.py
       └── langchain_basic_prompt_stream.md
 ```
 
